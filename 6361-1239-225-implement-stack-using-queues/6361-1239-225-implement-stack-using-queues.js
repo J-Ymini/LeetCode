@@ -34,9 +34,9 @@ MyStack.prototype.top = function() {
     while(this.firstQueue.length > 1) {
         this.secondQueue.push(this.firstQueue.shift());
     }
-    const result = this.firstQueue[0]
+    const result = this.firstQueue.shift()
 
-    this.secondQueue.push(this.firstQueue.shift())
+    this.secondQueue.push(result)
     while(this.secondQueue.length !== 0) {
         this.firstQueue.push(this.secondQueue.shift());
     }
