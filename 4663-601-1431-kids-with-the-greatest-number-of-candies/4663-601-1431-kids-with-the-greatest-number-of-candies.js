@@ -4,9 +4,6 @@
  * @return {boolean[]}
  */
 
- /** 
- 반복문을 통한 단순한 방법
-  */
 var kidsWithCandies = function(candies, extraCandies) {
 /** 
  1. 반복문을 통한 단순한 방법
